@@ -1,9 +1,12 @@
 package com.n3io.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.n3io.model.Goal;
+import com.n3io.model.GoalReport;
 import com.n3io.repository.GoalRepository;
 
 
@@ -19,4 +22,11 @@ public class GoalServiceImpl implements GoalService {
 		return goal;
 	}
 
+	public List<Goal> findAllGoals(){
+		return goalRepository.loadAll();
+	}
+
+	public List<GoalReport> findAllGoalReports() {
+		return goalRepository.findAllGoalReports();
+	}
 }

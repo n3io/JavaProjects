@@ -32,7 +32,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
     
-	<script type="text/javascript" src="jquery-1.8.3.js"></script>
+	<script type="text/javascript" src="assets/jquery-1.8.3.js"></script>
 
 	<script type="text/javascript">
 		$(document).ready(

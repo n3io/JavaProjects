@@ -21,6 +21,12 @@
 	<!--  added by kali -->
 	<mvc:resources location="/assets/" mapping="/assets/**"/>
 	<mvc:resources location="/pdfs/" mapping="/pdfs/**"/>
+	<bean id="messageSource"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basename">
+			<value>messages</value>
+		</property>
+	</bean>
 	
 	
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
