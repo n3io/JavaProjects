@@ -1,21 +1,9 @@
 package io.kali.selenium;
 
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
-
-import org.openqa.selenium.By;		
-import org.openqa.selenium.WebDriver;		
-import org.openqa.selenium.firefox.FirefoxDriver;		
-import org.testng.Assert;		
-import org.testng.annotations.Test;	
-import org.testng.annotations.BeforeTest;	
-import org.testng.annotations.AfterTest;
- 
- 
-
 
 public class WebDriverDemo {
 
