@@ -24,10 +24,6 @@ public class WebDriverDemo {
 			System.out.println(e);
 			
 		}
-		
-		
-		
-
 	}
 
 }
