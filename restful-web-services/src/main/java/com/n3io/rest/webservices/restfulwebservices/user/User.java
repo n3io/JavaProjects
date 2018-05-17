@@ -9,14 +9,20 @@ import javax.validation.constraints.Size;
 
 import com.n3io.rest.webservices.restfulwebservices.post.Post;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+@ApiModel(description="All details about the user.")
 public class User {
 
 	private Integer id;
 
 	@Size(min=2, message="Name should have atleast 2 character")
+	@ApiModelProperty(notes="Name should have atleast two characters")
 	private String name;
 	
 	@Past(message="Birthdate should be in past")
+	@ApiModelProperty(notes="Birth date should be in past")
 	private Date birthDate;
 	
 	private List<Post> posts = new ArrayList<>();
